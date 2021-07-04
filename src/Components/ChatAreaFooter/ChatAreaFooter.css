@@ -1,0 +1,45 @@
+.ChatFooter
+{
+	margin-top:57.5%;
+	margin-left: 0.1rem;
+	width: 99.8%;
+	height: 4rem;
+	background-color:#1e1e1e;
+	box-shadow: 0.1rem 0.1rem 0.4rem;
+	z-index: -1;
+	overflow:hidden; 
+	display: flex;
+
+
+}
+.ChatFooter textarea
+{
+	margin-left: 1rem;
+	margin-top:0.6rem;
+	width: 92%;
+	height: 70%;
+	color: black;
+	font-size: 1.2rem;
+	overflow: hidden;
+}
+.ChatFooter button
+{
+	margin-top:0.6rem;
+	border: 0;
+	background: none;
+	box-shadow: none;
+	border-radius: 0px;
+	width: 5%;
+	height: 70%;
+	color: white;
+	background-color: #007acc;
+	cursor: pointer;
+}
+.ChatFooter button:hover
+{
+	background-color: #005bce;
+}
+.ChatFooter button:active
+{
+	background-color: #005bce;
+}
