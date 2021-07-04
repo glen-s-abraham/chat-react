@@ -1,6 +1,8 @@
 import React,{Component} from 'react';
 import './Layout.css'
 import ChatList from '../../Components/ChatList/ChatList';
+import SideBarHeader from '../../Components/SideBarHeader/SideBarHeader';
+import ChatAreaHeader from '../../Components/ChatAreaHeader/ChatAreaHeader';
 import Aux from '../../hoc/ReactAux/ReactAux';
 class Layout extends Component{
 	render()
@@ -8,10 +10,7 @@ class Layout extends Component{
 		return(
 			<Aux>
 
-				<div className="Header">
-					<input type="text"/>
-					<button>Find</button>
-				</div>
+			<SideBarHeader/>			
 				<div className="SidePanel">
 					<ChatList id='1' name='Chris Evans' />
 					<ChatList id='2' name='Mathew Mcganahay' />
@@ -26,9 +25,12 @@ class Layout extends Component{
 					<ChatList id='2' name='Mathew Mcganahay' />
 					<ChatList id='2' name='Mathew Mcganahay' />
 					<ChatList id='2' name='Mathew Mcganahay' />
-
 				</div>
-				
+			
+			<div className="ChatArea">
+				<ChatAreaHeader name="Chirs evans" status="Online"/>
+			</div>
+			
 			</Aux>	
 		);
 	}
